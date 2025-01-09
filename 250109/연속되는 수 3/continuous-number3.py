@@ -15,6 +15,6 @@ for i in range(len(arr2)-1):
 
 
 if len(arr3)==0:
-    print(1)
+    print(n)
 else:
     print(max(arr3))
