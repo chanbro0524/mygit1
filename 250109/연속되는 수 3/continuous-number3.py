@@ -12,5 +12,9 @@ for i in range(n):
 arr3=[]
 for i in range(len(arr2)-1):
     arr3.append(arr2[i+1]-arr2[i])
-    
-print(max(arr3))
+
+
+if len(arr3)==0:
+    print(1)
+else:
+    print(max(arr3))
