@@ -1,6 +1,11 @@
 arr=[[0 for i in range(2001)] for i in range(2001)]
 for i in range(2):
     x1,y1,x2,y2=tuple(map(int,input().split()))
+    x1=x1+1000
+    x2=x2+1000
+    y1=y1+1000
+    y2=y2+1000
+
     for j in range(x1,x2+1):
         for k in range(y1,y2+1):
             arr[j][k]+=1
