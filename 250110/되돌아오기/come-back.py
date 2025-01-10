@@ -20,6 +20,7 @@ for i in range(n):
         cnt+=1
         if x==0 and y==0:
             cnt1=cnt
+            break
 
 
     
