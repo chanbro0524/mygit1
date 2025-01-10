@@ -35,7 +35,7 @@ for i in range(T):
                 continue
             else:
                 arr[x1-1]=1
-                arr1[x1-1]-=1
+                arr1[y1-1]-=1
 
 
 for i in arr:
