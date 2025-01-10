@@ -25,13 +25,16 @@ for i in range(T):
         continue
     else:
         if (arr[x1-1]==1 and arr[y1-1]==0) :
-            arr[y1-1]=1
-            arr1[x1-1]-=1
-    if arr1[y1-1]==0:
-        continue
-    else:
+            if arr1[x1-1]==0:
+                continue
+            else:
+                arr[y1-1]=1
+                arr1[x1-1]-=1
         if (arr[x1-1]==0 and arr[y1-1]==1):
-            arr[x1-1]=1
+            if arr1[y1-1]==0:
+                continue
+            else:
+                arr[x1-1]=1
 
 
 for i in arr:
