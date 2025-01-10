@@ -9,7 +9,7 @@ dy={'E':0,'N':1,'W':0,'S':-1}
 x,y=0,0
 
 cnt=0
-cnt1=0
+cnt1=[]
 for i in range(n):
     d,num=tuple(input().split())
     num=int(num)
@@ -19,13 +19,13 @@ for i in range(n):
         
         cnt+=1
         if x==0 and y==0:
-            cnt1=cnt
-            break
+            cnt1.append(cnt)
+            
 
 
     
-if cnt1==0:
+if len(cnt1)==0:
     print(-1)
 else:
-    print(cnt1)
+    print(cnt1[0])
 
