@@ -3,7 +3,9 @@ arr=[[0]*n for i in range(n)]
 dx=[1,0,-1,0]
 dy=[0,1,0,-1]
 def inrange(x,y):
-    if x!=0 and x!=n-1 and y!=0 and y!=n-1:
+    if x<0 or x>n-1 or y<0 or y>n-1:
+        return False
+    else:
         return True
 
 for i in range(m):
@@ -12,8 +14,8 @@ for i in range(m):
     arr[r][c]=1
     cnt=0
 
-    if inrange(r,c):
-        for i in range(4):
+    for i in range(4):
+        if inrange(r+dx[i],c+dy[i]):
             if arr[r+dx[i]][c+dy[i]]==1:
                 cnt+=1
 
