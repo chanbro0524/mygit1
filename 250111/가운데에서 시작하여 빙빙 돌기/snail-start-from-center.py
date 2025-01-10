@@ -18,7 +18,7 @@ for i in range(1,n*n+1):
     x1,y1=x+dx[d1],y+dy[d1]
     if indirect(x1,y1) and arr[x1][y1]!=0:
         x,y=x+dx[d],y+dy[d]
-    elif arr[x1][y1]==0:
+    elif indirect(x1,y1) and arr[x1][y1]==0:
         d=(d+1)%4
         x,y=x+dx[d],y+dy[d]
 
