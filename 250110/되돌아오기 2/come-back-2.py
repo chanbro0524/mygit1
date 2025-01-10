@@ -17,5 +17,5 @@ for i in range(len(arr)):
             break
     
     
-if(cnt=0):
+if(cnt==0):
     print(-1)
