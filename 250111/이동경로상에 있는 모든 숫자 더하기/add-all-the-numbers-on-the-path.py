@@ -8,9 +8,8 @@ dy=[0,-1,0,1]
 d=0
 x,y=n//2,n//2
 cnt=0
-def inrange(x,y):
-    if x>=0 and y>=0 and x<n and y<n:
-        return True
+def inrange(x, y):
+    return 0 <= x < n and 0 <= y < n
 
         
 arr2=[]   
