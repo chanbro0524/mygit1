@@ -3,7 +3,7 @@ dy=[1,0,-1,0]
 dx=[0,1,0,-1]
 d=0
 x,y=0,0
-
+cnt=0
 for i in range(len(arr)):
     if arr[i]=='R':
         d=(d+1)%4
@@ -13,7 +13,9 @@ for i in range(len(arr)):
         x,y=x+dx[d],y+dy[d]
         if x==0 and y==0:
             print(i+1)
+            cnt=1
             break
     
     
-    
+if(cnt=0):
+    print(-1)
