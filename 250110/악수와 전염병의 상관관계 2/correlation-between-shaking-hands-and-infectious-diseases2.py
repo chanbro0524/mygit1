@@ -36,8 +36,9 @@ for i in range(T):
             else:
                 arr[x1-1]=1
                 arr1[y1-1]-=1
-
-
+        elif (arr[x1-1]==1 and arr[y1-1]==1):
+            arr1[y1-1]-=1
+            arr1[x1-1]-=1
 for i in arr:
     print(i,end="")
 
