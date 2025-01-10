@@ -30,7 +30,7 @@ for i in range(T):
             else:
                 arr[y1-1]=1
                 arr1[x1-1]-=1
-        if (arr[x1-1]==0 and arr[y1-1]==1):
+        elif (arr[x1-1]==0 and arr[y1-1]==1):
             if arr1[y1-1]==0:
                 continue
             else:
