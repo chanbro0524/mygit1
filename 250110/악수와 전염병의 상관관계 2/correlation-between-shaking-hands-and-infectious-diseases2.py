@@ -1,6 +1,6 @@
 n,k,p,T=tuple(map(int,input().split()))
 arr=[0 for i in range(n)]
-arr1=[2 for i in range(n)]
+arr1=[k for i in range(n)]
 arr[p-1]=1
 
 class Hand:
