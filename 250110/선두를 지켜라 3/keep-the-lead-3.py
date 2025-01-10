@@ -31,8 +31,7 @@ for i in range(len(arr3)-1):
         cnt+=1
     
 print(cnt)
-    
-print(arr3)
+
     
     
     
