@@ -24,8 +24,8 @@ for i in range(t):
         x1,y1=x+dx[d],y+dy[d]
         if inrange(x1,y1):
             x,y=x+dx[d],y+dy[d]      
-            if arr[x][y] not in arr2:
-                arr2.append(arr[x][y])
+    if arr[x][y] not in arr2:
+        arr2.append(arr[x][y])
 cnt=0
 for i in arr2:
     cnt+=i
