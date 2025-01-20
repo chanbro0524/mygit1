@@ -24,7 +24,7 @@ for i in range(n):
                 if arr[k][l+2]==1:
                     s1+=1
                 num=max(num,s+s1)
-        for m in range(j+2,n-2):
+        for m in range(j+3,n-2):
             s2=0
             if arr[i][m]==1:
                 s2+=1
