@@ -6,29 +6,29 @@ def key(a,b):
     if abs(a-b)<=2:
         return True
     else:
-        if a==9:
+        if a==N:
             if b==1 or b==2:
                 return True
-        elif b==9:
+        elif b==N:
             if a==1 or a==2:
                 return True
-        elif b==8:
+        elif b==N-1:
             if a==1 :
                 return True
-        elif a==8:
+        elif a==N-1:
             if b==1:
                 return True
         elif b==2:
-            if a==9 :
+            if a==N :
                 return True
         elif a==2:
-            if b==9:
+            if b==N:
                 return True
         elif a==1:
-            if b==9 or b==8:
+            if b==N or b==N-1:
                 return True
         elif b==1:
-            if a==9 or a==8:
+            if a==N or a==N-1:
                 return True
         
 num=0
