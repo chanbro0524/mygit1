@@ -18,7 +18,19 @@ def key(a,b):
         elif a==8:
             if b==1:
                 return True
-
+        elif b==2:
+            if a==9 :
+                return True
+        elif a==2:
+            if b==9:
+                return True
+        elif a==1:
+            if b==9 or b==8:
+                return True
+        elif b==1:
+            if a==9 or a==8:
+                return True
+        
 num=0
 
 for i in range(1,N+1):
