@@ -14,6 +14,6 @@ else:
     for i in range(100):
         for j in range(i,100):
             arr=arr1[i:j+1]
-            if arr.count('G')==arr.count('H') and (arr1[i]=='G' or arr1[i]=='H') and (arr1[j]=='G' or arr1[j]=='H'):
+            if (arr.count('G')==arr.count('H')or arr.count('H')==0 or arr.count('G')==0)and (arr1[i]=='G' or arr1[i]=='H') and (arr1[j]=='G' or arr1[j]=='H'):
                num=max(num,j-i)
     print(num)
