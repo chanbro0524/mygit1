@@ -36,6 +36,7 @@ num1=0
 for i in range(1,10):
     for j in range(1,10):
         for k in range(1,10):
-            if  number(i,j,k)==n:
-                num1+=1
+            if i!=j and j!=k:
+                if  number(i,j,k)==n:
+                    num1+=1
 print(num1)
