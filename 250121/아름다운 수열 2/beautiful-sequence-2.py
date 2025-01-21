@@ -8,8 +8,7 @@ num1=0
 for i in range(N-M+1):
     num=0
     for j in range(M):
-        
-        if A[i+j] in B:
+        if B[j] in A[i:i+M]:
             num+=1
     if num==M:
         num1+=1
