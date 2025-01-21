@@ -11,7 +11,7 @@ for i in range(N-M+1):
         
         if A[i+j] in B:
             num+=1
-    if num==3:
+    if num==M:
         num1+=1
 
 
