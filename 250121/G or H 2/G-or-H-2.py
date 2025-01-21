@@ -2,7 +2,7 @@ n = int(input())
 people = [tuple(input().split()) for _ in range(n)]
 pos = [int(p[0]) for p in people]
 alpha = [p[1] for p in people]
-arr1=[0]*100
+arr1=[0]*101
 for i,j in zip(pos,alpha):
     arr1[i]=j
 
