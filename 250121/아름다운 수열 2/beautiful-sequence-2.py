@@ -1,0 +1,18 @@
+N, M = map(int, input().split())
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
+
+# Write your code here!
+num=0
+num1=0
+for i in range(N-M+1):
+    num=0
+    for j in range(M):
+        
+        if A[i+j] in B:
+            num+=1
+    if num==3:
+        num1+=1
+
+
+print(num1)
