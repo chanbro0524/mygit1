@@ -6,7 +6,7 @@ for i in range(N):
     count=0
     s=P[i]/2
     if s>B:
-        break
+        continue
     count+=1
     for j in range(N):
         if i==j:
