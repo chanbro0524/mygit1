@@ -13,5 +13,7 @@ for i in range(n-1):
                 continue
             int_min=min(int_min,max(team1,team2,team3)-min(team1,team2,team3))
 
-
-print(int_min)
+if int_min==1000:
+    print(-1)
+else:
+    print(int_min)
