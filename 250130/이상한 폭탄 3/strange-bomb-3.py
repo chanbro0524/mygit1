@@ -7,4 +7,4 @@ for i in range(N-1):
             if j-i<K:
                 arr[num[i]]+=1
 
-print(max(arr))
+print(arr.index(max(arr)))
