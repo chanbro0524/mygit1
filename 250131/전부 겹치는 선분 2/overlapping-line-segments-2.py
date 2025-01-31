@@ -4,7 +4,10 @@ x1 = [seg[0] for seg in segments]
 x2 = [seg[1] for seg in segments]
 maxx2=1
 minx1=100
+num=0
 for i in range(n):
+    maxx2=1
+    minx1=100
     for j in range(n):
         if i==j:
             continue
@@ -14,4 +17,7 @@ for i in range(n):
         continue
     else:
         print('Yes')
+        num+=1
         break
+    if num==0:
+        print("No")
