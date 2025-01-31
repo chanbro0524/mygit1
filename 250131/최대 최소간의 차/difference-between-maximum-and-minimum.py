@@ -1,8 +1,9 @@
 n, k = map(int, input().split())
 arr = list(map(int, input().split()))
+import sys
 
 cost=0
-costmax=10000
+costmax=sys.maxsize
 for i in range(max(arr)-min(arr)-k+1):
     cost=0
     minnum=min(arr)+i
