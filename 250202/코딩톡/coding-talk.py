@@ -16,8 +16,9 @@ for i in range(p-1,m):
 if u[p-1]==0:
     letters=[]
 if p-1>0:
-    if u[p-1]==u[p-2]:
-        if c[p-2]in letters:
-            letters.remove(c[p-2])
+    for i in range(1,p+2):
+        if u[p-i]==u[p-i-1]:
+            if c[p-2]in letters:
+                letters.remove(c[p-2])
 for j in letters:
     print(j,end=' ')
