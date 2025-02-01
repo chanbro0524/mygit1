@@ -26,8 +26,7 @@ for i in range(5000):
 
             break
         else:
-            t+=X-d
-
+            t+=1
             break
 
 
