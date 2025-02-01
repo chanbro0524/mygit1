@@ -15,6 +15,8 @@ for i in range(p-1,n):
         letters.remove(c[i])
 if u[p-1]==0:
     letters=[]
-
+if p-1>0:
+    if u[p-1]==u[p-2]:
+        letters.remove(c[p-2])
 for j in letters:
     print(j,end=' ')
