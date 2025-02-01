@@ -13,7 +13,7 @@ letters=letter[:n]
 for i in range(p-1,n):
     if c[i] in letters:
         letters.remove(c[i])
-if u[i]==0:
+if u[p-1]==0:
     letters=[]
 
 for j in letters:
