@@ -2,8 +2,6 @@ n = int(input())
 segments = [tuple(map(int, input().split())) for _ in range(n)]
 x1 = [seg[0] for seg in segments]
 x2 = [seg[1] for seg in segments]
-maxx2=1
-minx1=100
 num=0
 arr=[0]*101
 for i in range(n):
