@@ -18,7 +18,7 @@ for i in range(5000):
     else:
         if (d+ms)<X:
             t+=1
-            t+=(X-(d+ms))
+            t+=1
 
             break
         elif (d+ms)==X:
