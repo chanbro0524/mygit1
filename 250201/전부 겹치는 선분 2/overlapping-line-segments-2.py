@@ -12,7 +12,7 @@ for i in range(n):
         y=x2[j]
         for k in range(x,y+1):
             arr[k]+=1
-    if arr.count(n)>=1:
+    if arr.count(n-1)>=1:
         print('Yes')
         num+=1
         break
