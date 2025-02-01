@@ -5,6 +5,7 @@ x2 = [seg[1] for seg in segments]
 num=0
 arr=[0]*101
 for i in range(n):
+    arr=[0]*101
     for j in range(n):
         if i==j:
             continue
@@ -18,3 +19,4 @@ for i in range(n):
         break
 if num==0:    
     print('No')
+    
