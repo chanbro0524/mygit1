@@ -7,7 +7,7 @@ u = [int(msg[1]) for msg in messages]
 
 letter=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 
-letters=letter[:n]
+letters=letter[:n+1]
 
 
 for i in range(p-1,n):
