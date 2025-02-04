@@ -27,4 +27,4 @@ elif len(arr1)==0:
 else:
     arr1.sort(reverse=True)
     arr2.sort()
-    print(arr1[0]*arr2[0]*arr2[1])
+    print(max(arr1[0]*arr2[0]*arr2[1],arr1[0]*arr1[0]*arr1[1]))
