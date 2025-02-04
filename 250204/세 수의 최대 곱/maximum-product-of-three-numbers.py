@@ -17,7 +17,7 @@ if len(arr2)==1 :
     else:
         arr1.sort()
         arr2.sort(reverse=True)
-        print(arr2[0]*arr1[1]*arr1[2])
+        print(arr2[0]*arr1[0]*arr1[1])
 elif len(arr1)==0:
     if 0 in arr:
         print(0)
